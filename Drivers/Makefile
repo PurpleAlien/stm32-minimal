@@ -5,8 +5,7 @@ OBJDUMP=arm-none-eabi-objdump
 SIZE=arm-none-eabi-size
 RANLIB=arm-none-eabi-ranlib
 
-CFLAGS += -DSTM32L151xC -DUSE_FULL_LL_DRIVER
-#CFLAGS += -DSTM32L152xE -DUSE_FULL_LL_DRIVER
+CFLAGS += -DSTM32L152xE -DUSE_FULL_LL_DRIVER
 
 CFLAGS += -mfloat-abi=soft
 CFLAGS += -Wall -g -std=c99 -Os -fno-strict-aliasing
