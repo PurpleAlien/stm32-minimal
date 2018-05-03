@@ -22,7 +22,7 @@ OBJDUMP=arm-none-eabi-objdump
 SIZE=arm-none-eabi-size
 
 CFLAGS  = -Wall -g -std=gnu99 -Os
-CFLAGS += -DSTM32L151xC -DUSE_FULL_LL_DRIVER 
+CFLAGS += -DSTM32L152xC -DUSE_FULL_LL_DRIVER 
 CFLAGS += -mlittle-endian -mcpu=cortex-m3  -mthumb
 CFLAGS += -ffunction-sections -fdata-sections
 CFLAGS += -Wl,--gc-sections -Wl,-Map=$(PROJ_NAME).map
