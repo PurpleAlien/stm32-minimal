@@ -87,9 +87,6 @@ SECTIONS
     PROVIDE ( end = _ebss );
     PROVIDE ( _end = _ebss );
     
-    __exidx_start = .;
-    __exidx_end = .;
-    
     /* after that it's only debugging information. */
     
     /* remove the debugging information from the standard libraries */
@@ -98,6 +95,8 @@ SECTIONS
      libc.a ( * )
      libm.a ( * )
      libgcc.a ( * )
+     *(.ARM.exidx*)
+     *(.gnu.linkonce.armexidx.*)
      }
 
     /* Stabs debugging sections.  */
